@@ -1,0 +1,49 @@
+.book_list h2 {
+  font-size: 24px;
+  font-weight: bolder;
+}
+.book_list ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 230px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+.book_list ul li button {
+  background-color: #512da8;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 95px;
+}
+.book_list ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 20px 0;
+  row-gap: 25px;
+  justify-items: center;
+}
+.book_list li {
+  display: flex;
+}
+/* booklist.css */
+.book-image {
+  margin-bottom: 10px;
+}
+
+.book-list img {
+  max-width: 100px;
+  max-height: 150px;
+  object-fit: cover;
+  margin-right: 10px;
+}

@@ -1,0 +1,4 @@
+[build]
+  base = "front-end"  # Directory containing package.json
+  publish = "front-end/build"  # Directory with the build output
+  command = "npm run build"  # Build command

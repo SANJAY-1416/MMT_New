@@ -1,0 +1,310 @@
+/* .navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navbar .nav-links-container {
+  display: flex; 
+  justify-content: flex-end;
+}
+
+.navbar .nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li {
+  display: inline;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.navbar .nav-links a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+
+.hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  display: block; 
+  z-index: 2; 
+}
+
+
+.nav-links-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); 
+  transform: translateY(-100%); 
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links.active {
+  transform: translateY(0); 
+}
+
+.nav-links-container.active {
+  transform: translateY(0); 
+}
+
+.nav-links li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.nav-links a {
+  font-size: 18px;
+  color: white;
+}
+
+.nav-links a:hover {
+  background-color: #575757;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0; 
+  }
+
+  .nav-links li {
+    margin-bottom: 20px;
+  }
+} */
+
+/* .navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navbar .nav-links-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar .nav-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navbar .nav-links li {
+  display: inline;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.navbar .nav-links a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  display: block;
+  z-index: 2;
+}
+
+.nav-links-container {
+  position: fixed;
+  top: 0;
+  left: -35%;
+  width: 35%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.nav-links.active {
+  transform: translateX(0);
+}
+
+.nav-links-container.active {
+  transform: translateX(35%);
+}
+
+.nav-links li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.nav-links a {
+  display: flex;
+
+  font-size: 18px;
+  color: white;
+}
+
+.nav-links a:hover {
+  background-color: #575757;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  .nav-links li {
+    margin-bottom: 20px;
+  }
+} */
+
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Space between elements */
+  align-items: center;
+  position: relative;
+  height: 75px;
+}
+
+.navbar .nav-links-container {
+  display: flex; /* The menu stays in place */
+  justify-content: flex-end; /* Align the menu to the left */
+}
+
+.navbar .nav-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column; /* Arrange menu items in a column */
+  gap: 20px;
+  margin-top: 20px; /* Add margin to the top so items don't touch the hamburger */
+}
+
+.navbar .nav-links li {
+  display: inline;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.navbar .nav-links a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Hamburger icon styles */
+.hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  display: block; /* Show the hamburger icon */
+  /* position: absolute; Position it on the right side */
+  right: 20px; /* Add some space from the right edge */
+  z-index: 2; /* Make sure the button is above the navigation */
+}
+
+/* Navigation container slide effect */
+.nav-links-container {
+  position: fixed; /* Fixed position to stay visible on scroll */
+  top: 0;
+  left: -35%; /* Initially hide the menu off-screen to the left */
+  width: 35%; /* Set the width to 35% */
+  height: 100vh; /* Ensure full screen height */
+  background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+  transition: transform 0.3s ease-in-out;
+  z-index: 1; /* Ensure it stays above content */
+  padding-top: 50px; /* Add space for the hamburger */
+}
+
+.nav-links.active {
+  transform: translateX(0); /* Slide the menu into view from the left */
+}
+
+.nav-links-container.active {
+  transform: translateX(35%); /* Slide the container into view from the left */
+}
+
+.nav-links li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.nav-links a {
+  display: flex;
+  font-size: 18px;
+  color: white;
+}
+
+.nav-links a:hover {
+  background-color: #575757;
+}
+.header1 {
+  display: flex;
+  gap: 30px;
+}
+.login {
+  color: white;
+}
+.register {
+  color: white;
+}
+.header1 button {
+  color: white;
+}
+.main_logo {
+  display: flex;
+  gap: 30px;
+}
+.main_logo img {
+  padding: 0 0 10px 0;
+}
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0; /* Add padding for better spacing */
+  }
+
+  .nav-links li {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,47 @@
+.S-info {
+  display: flex;
+  width: 100%;
+  height: 550px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+.S-reg {
+  border: 1px solid brown;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.S-reg:hover {
+  background-color: brown;
+}
+.S-reg a:hover {
+  color: white;
+}
+
+.S-staff {
+  border: 1px solid brown;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.S-staff:hover {
+  background-color: brown;
+}
+.S-staff a:hover {
+  color: white;
+}
+.S-info a {
+  text-decoration: none;
+  color: rgb(226, 28, 28);
+}

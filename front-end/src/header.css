@@ -1,0 +1,257 @@
+.logo {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: white;
+}
+
+.header {
+  display: flex;
+  width: 101.1%;
+  justify-content: space-between;
+  background: #960000;
+  padding: 20px;
+  align-items: center;
+  height: 110px;
+  padding: 0;
+  margin: 0;
+}
+.header1 {
+  display: flex;
+  gap: 30px;
+}
+.header2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.header1 .login {
+  width: 100px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid rgb(248, 247, 247);
+  padding: 10px;
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+.login a {
+  text-decoration: none;
+  color: rgb(254, 252, 252);
+}
+.header1 .register {
+  width: 100px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid rgb(247, 245, 245);
+  padding: 10px;
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+.register a {
+  text-decoration: none;
+  color: rgb(251, 251, 251);
+}
+.header1 .login:hover {
+  background: rgb(247, 247, 247);
+}
+.header1 .login a:hover {
+  color: rgb(252, 32, 32);
+}
+.header1 .register:hover {
+  background: rgb(247, 246, 246);
+}
+.header1 .register a:hover {
+  color: rgb(252, 32, 32);
+}
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Space between elements */
+  align-items: center;
+  position: relative;
+  height: 55px;
+}
+
+.navbar .nav-links-container {
+  display: flex; /* The menu stays in place */
+  justify-content: flex-end; /* Align the menu to the left */
+}
+
+.navbar .nav-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column; /* Arrange menu items in a column */
+  gap: 20px;
+  margin-top: 20px; /* Add margin to the top so items don't touch the hamburger */
+}
+
+.navbar .nav-links li {
+  display: inline;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.navbar .nav-links a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Hamburger icon styles */
+.hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  display: block; /* Show the hamburger icon */
+  /* position: absolute; Position it on the right side */
+  right: 20px; /* Add some space from the right edge */
+  z-index: 2; /* Make sure the button is above the navigation */
+}
+
+/* Navigation container slide effect */
+.nav-links-container {
+  position: fixed; /* Fixed position to stay visible on scroll */
+  top: 0;
+  left: -35%; /* Initially hide the menu off-screen to the left */
+  width: 35%; /* Set the width to 35% */
+  height: 100vh; /* Ensure full screen height */
+  background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+  transition: transform 0.3s ease-in-out;
+  z-index: 1; /* Ensure it stays above content */
+  padding-top: 50px; /* Add space for the hamburger */
+}
+
+.nav-links.active {
+  transform: translateX(0); /* Slide the menu into view from the left */
+}
+
+.nav-links-container.active {
+  transform: translateX(35%); /* Slide the container into view from the left */
+}
+
+.nav-links li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.nav-links a {
+  display: flex;
+  font-size: 18px;
+  color: white;
+}
+
+.nav-links a:hover {
+  background-color: #575757;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0; /* Add padding for better spacing */
+  }
+
+  .nav-links li {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .logo {
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    color: white;
+  }
+}
+.logo img {
+  width: 150px;
+  height: 70px;
+}
+
+@media all and (max-width: 600px) {
+  .logo img {
+    width: 80px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  .header1 button {
+    color: white;
+    border: 1px solid white;
+    width: 55px;
+    height: 25px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    margin: 5px;
+  }
+  .header1 .login {
+    color: white;
+    border: 1px solid white;
+    width: 55px;
+    height: 25px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    margin: 5px;
+  }
+  /* .register a {
+      color: white;
+      border: 1px solid white;
+      width: 55px;
+      height: 25px;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 11px;
+      margin: 5px;
+    } */
+  .header1 .register {
+    color: white;
+    border: 1px solid white;
+    width: 55px;
+    height: 25px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    margin: 5px;
+  }
+  .header {
+    display: flex;
+    height: 80px;
+    /* justify-content: space-evenly; */
+  }
+  .header1 {
+    gap: 3px;
+  }
+}

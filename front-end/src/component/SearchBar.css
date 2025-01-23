@@ -1,0 +1,4 @@
+.searchbar input {
+  display: flex;
+  justify-self: center;
+}

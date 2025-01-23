@@ -1,0 +1,122 @@
+.btn {
+  display: flex;
+  align-items: center;
+}
+.locationdetails {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 251px;
+  margin-bottom: 125px;
+  background: white;
+}
+.mainlocation {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.btn button:nth-child(1) img {
+  width: 25px;
+  height: 25px;
+  /* border: 1px solid rgb(240, 48, 80);
+    padding: 5px;
+    background: rgb(253, 58, 91);
+    color: white;
+    border-radius: 5px;
+    font-size: 13px; */
+}
+.btn button:nth-child(2) {
+  /* border: 1px solid rgb(240, 48, 80);
+    padding: 5px;
+    background: rgb(238, 63, 92);
+    color: white;
+    border-radius: 5px;
+    font-size: 13px; */
+  width: 24.5px;
+  height: 24.5px;
+}
+.btn button:nth-child(3) {
+  border: 1px solid rgb(232, 230, 230);
+  padding: 5px;
+  background: rgb(232, 230, 230);
+  color: rgb(20, 20, 20);
+  border-radius: 5px;
+  font-size: 13px;
+}
+.top {
+  display: flex;
+  gap: 5px;
+}
+.top .btn {
+  display: flex;
+  gap: 5px;
+}
+.orgimg {
+  width: 15px;
+  height: 15px;
+}
+.dest {
+  width: 17px;
+  height: 17px;
+}
+.mainorg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.maindest {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media all and (max-width: 600px) {
+  .searchcomponent {
+    display: flex;
+    flex-direction: column;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+  }
+  .locationdetails img {
+    /* width: 90px; */
+    height: 100px;
+  }
+  .timing p {
+    font-size: 12px;
+  }
+  .top .btn {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+  }
+  .locationdetails {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    position: absolute;
+
+    background: white;
+    margin-bottom: 95px;
+  }
+  .mainlocation {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+/* // marginTop: "16px"
+  display: "flex";
+  flexDirection: "row",
+  // alignItems: "center",
+  top: "510px",
+  width: "100%",
+  height: "230px",
+  background: "white",
+  padding: "10px",
+  position: "absolute",
+  alignContent:
+  // justifyContent: "flex-end", */
