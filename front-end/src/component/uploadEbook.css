@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .flipbook-container {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+  }
+  
+  .flipbook-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .flipbook {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    background-color: white;
+  }
+  
+  .page {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .page:last-child {
+    border-bottom: none;
+  }
+  
+  .publish-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .publish-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .admin-container {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .input,
+  .textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .textarea {
+    height: 200px;
+    resize: none;
+  }
+  
